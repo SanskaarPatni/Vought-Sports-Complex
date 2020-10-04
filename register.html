@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <link rel="icon" href="https://static.wikia.nocookie.net/amazons-the-boys/images/6/66/Vought_international.jpg"
+        type="image/icon type">
+</head>
+
+<body>
+    <div class="register">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#home"> <span> </span>
+                        <span> </span>
+                        <span></span>
+                        <span> </span>Home</a></li>
+                <li><a href="index.html#packages"> <span> </span>
+                        <span> </span>
+                        <span></span>
+                        <span> </span>Packages</a></li>
+                <li><a href="index.html#about"> <span> </span>
+                        <span> </span>
+                        <span></span>
+                        <span> </span>About</a></li>
+                <li><a href="register.html"> <span> </span>
+                        <span> </span>
+                        <span></span>
+                        <span> </span>Register</a></li>
+            </ul>
+        </nav>
+        <form class="container-form" id="BookPackageForm">
+            <h2>Register</h2>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="fname" required="required">
+                        <span class="text">First name*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="lname" required="required">
+                        <span class="text">Last name*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="emai" required="required">
+                        <span class="text">Email*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="mobile" required="required">
+                        <span class="text">Mobile*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="number" name="noofmembers" required="required">
+                        <span class="text">Number of members*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="number" name="duration" required="required">
+                        <span class="text">Duration of membership(in months)*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="muaid" required="required">
+                        <span class="text">Mars Unified Authentication Number*</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="package">Choose a package:</label>
+                    <select id="package">
+                        <option value="Basic">Basic</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <input type="submit" id="modal-btn" value="Submit">
+                </div>
+            </div>
+        </form>
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Receipt</h2>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <h3>Cheers!</h3>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
