@@ -96,9 +96,9 @@ function openModal(e) {
         document.querySelector('.modal-body').innerHTML += '<p>A PDF of this receipt has been sent to your registered mobile number ' + mobile + ' and has been also mailed to ' + email + '.<p>';
         document.querySelector('.modal-body').innerHTML += '<p>Cost of ' + package + ' membership per person $' + cost + ' K per month.<p>';
         document.querySelector('.modal-body').innerHTML += '<p>Number of members enrolled: ' + noOfMembers + '</p>';
-        if (noOfMembers > 1) document.querySelector('.modal-body').innerHTML += '<p>Discount applicable: Number of members * 2 = $' + noOfMembers * 2 + 'K per month.</p>';
-        document.querySelector('.modal-body').innerHTML += '<p>Amount for ' + noOfMembers + ' members after applying discount: $' + costAfterDiscount + ' K per month.</p>';
-        document.querySelector('.modal-body').innerHTML += '<p>Total Amount for ' + duration + 'months after applying discount: $' + costAfterDiscount * duration + ' K</p>';
+        if (noOfMembers > 1) document.querySelector('.modal-body').innerHTML += '<p>Discount applicable: Number of members * 2 = $' + noOfMembers * 2 + ' K per month.</p>';
+        document.querySelector('.modal-body').innerHTML += '<p>Amount for ' + noOfMembers + ' member/s after applying discount: $' + costAfterDiscount + ' K per month.</p>';
+        document.querySelector('.modal-body').innerHTML += '<p>Total Amount for ' + duration + ' month/s after applying discount: $' + costAfterDiscount * duration + ' K</p>';
         modal.style.display = 'block';
         for (i = 0; i < form.elements.length; i++) {
             form.elements[i].value = null;
