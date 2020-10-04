@@ -350,6 +350,7 @@ a:hover span:nth-child(4){
     background-clip: text;
     z-index: 2;
 }
+/*Register Page*/
 .register{
     display: flex;
     justify-content: center;
@@ -445,6 +446,11 @@ input[type="submit"]
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.row1{
+    text-align: center;
+}
+/*Modal*/
 .modal {
     display: none;
     position: fixed;
@@ -536,15 +542,16 @@ input[type=number] {
     .card-list{
         overflow-x: scroll ;
     }
-    .card{
+    .card:first-child{
         font-size: small;
         width: fit-content;
-        margin-left: 100px;
+        margin-left: 200px;
     }
 
     a{
         font-size: 14px;
         padding-right:10px;
+        padding-left: 10px;
         justify-content: center;
         align-items: center;
     }
